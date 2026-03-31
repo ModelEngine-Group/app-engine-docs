@@ -1,0 +1,30 @@
+title: ModelEngine Application Engineering Documentation
+description: Documentation for ModelEngine Application Engineering
+theme: jekyll-theme-cayman
+show_downloads: false
+
+defaults:
+  - scope:
+      path: "docs/zh_CN"
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "zh_CN"
+  - scope:
+      path: "docs/en_US"
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "en_US"
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-toc
+
+relative_links:
+  enabled: true
+  collections: true
+
+toc:
+  min_level: 1
+  max_level: 3

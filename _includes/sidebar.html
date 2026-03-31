@@ -1,0 +1,82 @@
+<nav class="sidebar-nav">
+  <h3>目录</h3>
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">首页</a></li>
+    <li>
+      <a href="{{ '/docs/zh_CN/' | relative_url }}">中文文档</a>
+      <ul>
+        <li><a href="{{ '/docs/zh_CN/model-access/' | relative_url }}">模型接入</a></li>
+        <li><a href="{{ '/docs/zh_CN/build-agent/' | relative_url }}">构建智能体</a></li>
+        <li><a href="{{ '/docs/zh_CN/build-conversational-assistant/' | relative_url }}">构建对话助手</a></li>
+        <li><a href="{{ '/docs/zh_CN/workflow/' | relative_url }}">工作流</a></li>
+        <li><a href="{{ '/docs/zh_CN/knowledge-base/' | relative_url }}">知识库</a></li>
+        <li><a href="{{ '/docs/zh_CN/plugins/' | relative_url }}">插件</a></li>
+        <li><a href="{{ '/docs/zh_CN/forms/' | relative_url }}">表单</a></li>
+        <li><a href="{{ '/docs/zh_CN/application-market/' | relative_url }}">应用市场</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="{{ '/docs/en_US/' | relative_url }}">English Docs</a>
+      <ul>
+        <li><a href="{{ '/docs/en_US/model-access/' | relative_url }}">Model Access</a></li>
+        <li><a href="{{ '/docs/en_US/build-agent/' | relative_url }}">Build Agent</a></li>
+        <li><a href="{{ '/docs/en_US/build-conversational-assistant/' | relative_url }}">Build Conversational Assistant</a></li>
+        <li><a href="{{ '/docs/en_US/workflow/' | relative_url }}">Workflow</a></li>
+        <li><a href="{{ '/docs/en_US/knowledge-base/' | relative_url }}">Knowledge Base</a></li>
+        <li><a href="{{ '/docs/en_US/plugins/' | relative_url }}">Plugin</a></li>
+        <li><a href="{{ '/docs/en_US/forms/' | relative_url }}">Form</a></li>
+        <li><a href="{{ '/docs/en_US/application-market/' | relative_url }}">Application Market</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<style>
+.sidebar-nav {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.sidebar-nav h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 8px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-nav > ul > li {
+  margin: 8px 0;
+}
+
+.sidebar-nav a {
+  color: #0366d6;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-nav ul ul {
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.sidebar-nav ul ul li {
+  margin: 4px 0;
+}
+
+.sidebar-nav ul ul a {
+  font-size: 0.9em;
+  color: #586069;
+}
+</style>

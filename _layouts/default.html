@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if page.toc %}
+  <link rel="stylesheet" href="{{ '/assets/css/toc.css' | relative_url }}">
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/docs/zh_CN/' | relative_url }}" class="nav-link">中文</a>
+        <a href="{{ '/docs/en_US/' | relative_url }}" class="nav-link">English</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="page-content">
+    <div class="wrapper">
+      <div class="sidebar">
+        {% include sidebar.html %}
+      </div>
+      <article class="content">
+        {% if page.toc %}
+        <div class="toc">
+          {{ content | toc_only }}
+        </div>
+        {% endif %}
+        {{ content }}
+      </article>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; {{ site.time | date: '%Y' }} ModelEngine-Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
