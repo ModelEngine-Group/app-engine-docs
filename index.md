@@ -7,11 +7,6 @@ title: ModelEngine 应用工程文档
 
 欢迎使用 ModelEngine 应用工程文档。本仓库包含 ModelEngine 平台应用工程相关的完整文档。
 
-## 文档语言
-
-- [中文文档](docs/zh_CN/)
-- [English Documentation](docs/en_US/)
-
 ## 文档目录
 
 ### 模型接入
