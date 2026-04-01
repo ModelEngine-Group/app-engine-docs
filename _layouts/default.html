@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}应用工程文档</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% if page.toc %}
   <link rel="stylesheet" href="{{ '/assets/css/toc.css' | relative_url }}">
@@ -12,11 +12,7 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav class="site-nav">
-        <a href="{{ '/docs/zh_CN/' | relative_url }}" class="nav-link">中文</a>
-        <a href="{{ '/docs/en_US/' | relative_url }}" class="nav-link">English</a>
-      </nav>
+      <a class="site-title" href="{{ '/docs/zh_CN/' | relative_url }}">应用工程文档</a>
     </div>
   </header>
 
