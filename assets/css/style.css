@@ -67,15 +67,14 @@ body {
 .page-content .wrapper {
   display: flex;
   gap: 32px;
-  height: 100%;
+  align-items: flex-start;
 }
 
 .sidebar {
   width: 260px;
   flex-shrink: 0;
-  align-self: flex-start;
   position: sticky;
-  top: 0;
+  top: 32px;
 }
 
 .content {

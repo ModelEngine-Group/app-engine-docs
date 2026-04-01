@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 应用市场
-parent: 应用工程
-nav_order: 9
+parent: 应用市场
+nav_order: 1
 ---
 
 # 应用市场
