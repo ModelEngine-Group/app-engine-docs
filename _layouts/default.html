@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrapper">
+    <div class="container">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav">
         <a href="{{ '/docs/zh_CN/' | relative_url }}" class="nav-link">中文</a>
@@ -19,9 +19,9 @@
       </nav>
     </div>
   </header>
-  
+
   <main class="page-content">
-    <div class="wrapper">
+    <div class="container">
       <div class="sidebar">
         {% include sidebar.html %}
       </div>
@@ -35,9 +35,9 @@
       </article>
     </div>
   </main>
-  
+
   <footer class="site-footer">
-    <div class="wrapper">
+    <div class="container">
       <p>&copy; {{ site.time | date: '%Y' }} ModelEngine-Group. All rights reserved.</p>
     </div>
   </footer>

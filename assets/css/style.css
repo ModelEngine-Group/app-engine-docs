@@ -18,14 +18,12 @@ body {
   flex-direction: column;
 }
 
-.wrapper {
+/* Container for header and footer */
+.container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .site-header {
@@ -33,6 +31,12 @@ body {
   color: #fff;
   padding: 16px 0;
   flex-shrink: 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-title {
@@ -43,13 +47,13 @@ body {
 }
 
 .site-nav {
-  float: right;
+  display: flex;
+  gap: 16px;
 }
 
 .nav-link {
   color: rgba(255,255,255,0.7);
   text-decoration: none;
-  margin-left: 16px;
   padding: 4px 8px;
   border-radius: 4px;
 }
@@ -60,12 +64,11 @@ body {
 }
 
 .page-content {
-  padding: 32px 0;
   flex: 1;
-  min-height: calc(100vh - 200px);
+  padding: 32px 0;
 }
 
-.page-content .wrapper {
+.page-content .container {
   display: flex;
   gap: 32px;
   align-items: flex-start;
@@ -169,6 +172,7 @@ body {
   padding: 24px 0;
   text-align: center;
   flex-shrink: 0;
+  margin-top: auto;
 }
 
 .site-footer p {
@@ -203,11 +207,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .page-content .wrapper {
+  .page-content .container {
     flex-direction: column;
   }
-  
+
   .sidebar {
     width: 100%;
+    position: static;
+    max-height: none;
   }
 }
